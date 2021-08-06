@@ -1,0 +1,124 @@
+body{
+    margin: 0;
+}
+.container{
+    width: 100%;
+    background: #fff;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-top: 50px;
+    box-sizing: border-box;
+}
+.top-first-item{
+    float: left;
+    width: 40%;
+    margin-right: 10%;
+    box-sizing: border-box;
+    font-family: PT Serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: -0.045em;
+    color: #000000;
+}
+.top-second-item{
+    float: left;
+    width: 40%;
+    margin-right: 10%;
+    box-sizing: border-box;
+}
+.top-second-item h6{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+
+    /* identical to box height */
+    text-transform: uppercase;
+    color: #000000;
+}
+.top-second-item p{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    color: #000000;
+}
+.item{
+    width: 33%;
+    height: 500px;
+    float: left;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+.picture{
+    width: 90%;
+    display: flex;
+}
+.picture img{
+    max-width: 75%;
+    
+  }
+.picture p{
+    float: left;
+    writing-mode: vertical-rl;
+    font-family: PT Serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+
+    /* identical to box height */
+    text-transform: uppercase;
+    color: #000000;
+}
+.name{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+
+    /* identical to box height */
+    color: #000000;
+}
+.footer {
+    width:100%;
+    float:left;
+    margin-top: 30px;
+    box-sizing: border-box;
+    padding: 3%;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+
+    /* identical to box height */
+    text-align: center;
+    color: #BDBDBD;
+}
+
+@media screen and (min-width:800px) {
+    .item:nth-child(3n-1) {
+        padding-top: 100px;
+    }
+}
+@media screen and (max-width: 800px) {
+    .top-first-item , .top-second-item{
+      width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+    }
+    .item{
+        width: 50%; /* The width is 100%, when the viewport is 800px or smaller */
+        height: 350px;
+      }
+      .item:nth-child(2n) {
+        padding-top: 100px;
+    }
+    .footer{
+        font-size: 12px; 
+    }
+}
