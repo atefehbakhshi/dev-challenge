@@ -1,0 +1,347 @@
+body{
+    margin-top: 52px;
+    margin-left: 236px;
+}
+.title h3{
+    width: 587px;
+    margin-bottom: 12px;
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 64px;
+    color: #000000;
+}
+#drag-indicator{
+    float: left;
+    color: #C4C4C4;;
+    font-size:18px; 
+    transform: rotate(90deg);
+    margin-top: 0;
+    margin-right: 5px;
+}
+.title p{
+    width: 592px;
+    font-family: Montserrat;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #4F4F4F;
+    padding-left: 20px;
+}
+.picture img{
+    border-radius: 12px;
+    max-width: 969px;
+    margin-top: 17px;
+}
+.flex-container {
+    display: flex;
+    flex-direction: row;
+  }
+.ingredients  {
+    width: 592px;
+    float: left;
+    margin-bottom: 10px;
+}
+.ingredients h6 , .instructions h6{
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+    color: #333333;
+    margin-bottom: 30px;
+}
+.crust{
+    margin-bottom: 30px;
+    font-family: Playfair Display;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    color: #333333;
+}
+.cheesecake{
+    margin-top: 40px;
+    margin-bottom: 30px;
+    font-family: Playfair Display;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    color: #333333;
+}
+.checkbox{
+    display: block;
+    position: relative;
+    padding-left:25px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.checkbox p{
+    margin-left: 17px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 25px;
+    color: #333333;
+}
+/* Hide the browser's default checkbox */
+.checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 21px;
+    width: 21px;
+    border: 1px solid #828282;
+    border-radius:4px;
+}
+/* When the checkbox is checked, add a blue background */
+.checkbox input:checked ~ .checkmark {
+    background-color: rgb(50, 130, 255);
+}
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+/* Show the checkmark when checked */
+.checkbox input:checked ~ .checkmark:after {
+    display: block;
+}
+/* Style the checkmark/indicator */
+.checkbox .checkmark:after {
+    left: 7px;
+    top: 2px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2.5px 2.5px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.time-box{
+    width: 216px;
+    height: 320px;
+    float: left;
+    margin-top: 50px;
+    margin-left: 50px;
+    padding-top: 15px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+}
+.serving , .time{
+    margin: 40px;
+}
+#restaurant-menu{
+    float: left;
+    color: #F2994A;
+    font-size:36px; 
+}
+.text{
+    margin-left: 50px;
+}
+.text :nth-child(1){
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 12px;
+    text-transform: uppercase;
+    color: #BDBDBD;
+}
+.text :nth-child(2){
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1px;
+    color: #333333;
+}
+#serving{
+    color: #F2994A;
+}
+#schedule{
+    float: left;
+    font-size:36px; 
+    color: #4F4F4F;
+}
+.instructions{
+    width: 592px;
+}
+.instructions-item{
+    display: flex;
+}
+.item-box{
+    width: 36px;
+    height: 36px;
+    text-align: center;
+    margin-right: 17px;
+    margin-top: 0;
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+    color: #FFFFFF;
+    background: #F2994A;
+    border-radius: 6px;
+}
+.item-text{
+    width: 555px;
+    margin-top: 0px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 25px;
+    color: #000000;
+}
+.source{
+    font-family: Montserrat;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+    color: #BDBDBD;
+}
+.footer {
+    width:100%;
+    float:left;
+    padding-top: 3%;
+    margin-left:  -30px;
+    box-sizing: border-box;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #A9A9A9;
+}
+.footer a{
+    font-weight: bold;
+    color: #A9A9A9;
+}
+
+@media screen and (max-width:800px) {
+    body{
+        margin-top: 32px;
+        margin-left: 11px;
+    }
+    .title h3{
+        width: 323px;
+        font-size: 24px;
+        line-height: 32px;
+    }
+    .title p{
+        width: 323px;
+        font-size: 12px;
+        line-height: 15px;
+        padding-right: 30px;
+        box-sizing: border-box;
+    }
+    .picture img{
+        max-width: 352px;
+        height: 213px ;
+    }
+    .flex-container {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .ingredients  {
+        width: 350px;
+        margin-top: -25px;
+    }
+    .ingredients h6 , .instructions h6{
+        margin-bottom: 13px;
+    }
+    .crust{
+        margin-bottom: 24px;
+        font-size: 16px;
+        line-height: 21px;
+    }
+    .checkbox p{
+        margin-left: 0px;
+        padding-left: 9px;
+        box-sizing: border-box;
+        font-size: 14px;
+    }
+    .time-box{
+        width: 352px;
+        height: auto;
+        margin-top: 0px;
+        margin-left: 0px;
+        padding-top: 15px;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 0px;
+    }
+    .main-time{
+        display: flex;
+        flex-direction: row;
+    }
+    .serving {
+        margin: 11px 0px ;
+    }
+    .time{
+        margin: 11px;
+    }
+    .main-time :nth-child(1){
+        margin-left: 0px;
+    }
+    #restaurant-menu{
+        font-size:26px; 
+    }
+    .text{
+        margin-left: 30px;
+    }
+    .text :nth-child(1){
+        font-size: 8px;
+        line-height: 10px;
+    }
+    .text :nth-child(2){
+        font-size: 10px;
+    }
+    #schedule{
+        font-size:26px; 
+        margin-top: 10px;
+    }
+    .instructions{
+        width: 352px;
+        margin-top: -40px;
+        margin-bottom: 28px;
+        padding-right: 15px;
+        box-sizing: border-box;
+    }
+    .item-text{
+        width:300px;
+    }
+    .source{
+        font-size: 12px;
+    }
+    .footer {
+        margin-left:  0;
+    }
+}
+
+
+/* I learn about flexbox and know the margin and padding are very important */
+
+
