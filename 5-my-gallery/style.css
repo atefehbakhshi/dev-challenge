@@ -1,0 +1,223 @@
+body{
+    margin: 0;
+    width: 1440px;
+}
+.person-information{
+    width: 100%;
+    padding-left: 611px;
+    padding-right: 612px;
+    padding-top: 41px;
+    box-sizing: border-box;
+}
+.person-image{
+    max-width: 147px;
+    border-radius: 16px;
+    margin-left: 35px;
+}
+.person-name{
+    margin-left: 16px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color: #4E5150;
+}
+.person-country{
+    margin-left: 55px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #A9A9A9;
+}
+.account{
+    width: 100%;
+    padding-left:546px;
+    padding-right: 546px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.account-item{
+    width: 100px;
+    height: 67px;
+    background: #E5E5E5;
+    border-radius: 12px;
+}
+.account-number{
+    margin-top: 15px;
+    margin-bottom: 3.1px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #4E5150;
+}
+.account-text{
+    margin-top: 0px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #BDBDBD;
+}
+.gallery{
+    width: 100%;
+    padding-left: 219px;
+    padding-right: 242px;
+    box-sizing: border-box;
+    padding-bottom: 140px;
+}
+.gallery img{
+    border-radius: 12px;
+}
+.row1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 54px;
+}
+#vase{
+    width: 296px;
+}
+#sofa{
+    width: 629px;
+}
+.row2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 54px;
+}
+.row2-col1{
+    width: 627px;
+}
+#bath{
+    width: 627px;
+}
+.row2-col1-row2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 54px;
+}
+#room{
+    width: 296px;
+}
+#plant{
+    width: 296px;
+}
+.row2-col2{
+
+}
+#lamp{
+    width: 307px;
+}
+.footer{
+    width: 100%;
+    padding-left: 576px;
+    padding-right: 577px;
+    box-sizing: border-box;
+}
+.footer p{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #B9BDCF;
+}
+.footer a{
+    font-weight: bold;
+    color: #B9BDCF;
+}
+@media screen and (max-width:800px) {
+    body{
+        margin: 0;
+        width:375px;
+    }
+    .person-information{
+        padding-left: 124.4px;
+        padding-right: 109.05px;
+        padding-top: 17.61px;
+    }
+    .person-image{
+        max-width: 121px;
+        margin-left: 10.6px;
+    }
+    .person-name{
+        margin-left: 10.6px;
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .person-country{
+        margin-left: 20px;
+        font-size: 10px;
+        line-height: 12px;
+    }
+    .account{
+        padding-left:64px;
+        padding-right: 50px;
+    }
+    .account-item{
+        width: 78px;
+        height: 52px;
+    }
+    .account-number{
+        margin-top: 10px;
+        margin-bottom: 3.1px;
+        font-size: 12px;
+        line-height: 15px;
+    }
+    .account-text{
+        font-size: 12px;
+        line-height: 15px;
+    }
+    .gallery{
+        padding-left: 5.05px;
+        padding-right: 12px;
+        padding-bottom: 31.18px;
+    }
+    .row1{
+        margin-top: 54px;
+    }
+    #vase{
+        width: 101.28px;
+    }
+    #sofa{
+        width: 229.98px;
+    }
+    .row2{
+        margin-top: 19.74px;
+    }
+    .row2-col1{
+        width:229.25px;
+    }
+    #bath{
+        width: 229.25px;
+    }
+    .row2-col1-row2{
+        margin-top: 19.74px;
+    }
+    #room{
+        width: 101.28px;
+    }
+    #plant{
+        width: 101.28px;
+    }
+    #lamp{
+        width: 110.32px;
+    }
+    .footer{
+        padding-left: 42px;
+        padding-right: 46px;
+    }
+}
