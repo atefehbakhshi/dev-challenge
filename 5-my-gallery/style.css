@@ -1,21 +1,18 @@
 body{
     margin: 0;
-    width: 1440px;
+    width: 100%;
 }
 .person-information{
     width: 100%;
-    padding-left: 611px;
-    padding-right: 612px;
     padding-top: 41px;
     box-sizing: border-box;
+    text-align: center;
 }
 .person-image{
     max-width: 147px;
     border-radius: 16px;
-    margin-left: 35px;
 }
 .person-name{
-    margin-left: 16px;
     font-family: Montserrat;
     font-style: normal;
     font-weight: 600;
@@ -24,7 +21,6 @@ body{
     color: #4E5150;
 }
 .person-country{
-    margin-left: 55px;
     font-family: Montserrat;
     font-style: normal;
     font-weight: 600;
@@ -34,18 +30,16 @@ body{
 }
 .account{
     width: 100%;
-    padding-left:546px;
-    padding-right: 546px;
     box-sizing: border-box;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
 }
 .account-item{
     width: 100px;
     height: 67px;
     background: #E5E5E5;
     border-radius: 12px;
+    margin-right: 20px;
 }
 .account-number{
     margin-top: 15px;
@@ -70,61 +64,64 @@ body{
 }
 .gallery{
     width: 100%;
-    padding-left: 219px;
-    padding-right: 242px;
     box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
     padding-bottom: 140px;
 }
 .gallery img{
     border-radius: 12px;
 }
 .row1{
+    width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    margin-top: 54px;
+    justify-content: center;
+    margin-top: 50px;
 }
 #vase{
-    width: 296px;
+    width: 25%;
+    margin-right: 50px;
 }
 #sofa{
-    width: 629px;
+    width: 45%;
 }
 .row2{
+    width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    margin-top: 54px;
+    justify-content: center;
+    margin-top: 50px;
 }
 .row2-col1{
-    width: 627px;
+    width: 47.3%;
+    margin-right: 50px;
 }
 #bath{
-    width: 627px;
+    width: 100%;
 }
 .row2-col1-row2{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 54px;
+    margin-top: 50px;
 }
 #room{
-    width: 296px;
+    width: 48.1%;
 }
 #plant{
-    width: 296px;
+    width: 48.1%;
 }
 .row2-col2{
-
+    display: flex;
+    flex-direction: row;
+    width: 22.7%;
 }
 #lamp{
-    width: 307px;
+    width: 100%;
 }
 .footer{
     width: 100%;
-    padding-left: 576px;
-    padding-right: 577px;
-    box-sizing: border-box;
 }
 .footer p{
     font-family: Montserrat;
@@ -140,40 +137,21 @@ body{
     color: #B9BDCF;
 }
 @media screen and (max-width:800px) {
-    body{
-        margin: 0;
-        width:375px;
-    }
     .person-information{
-        padding-left: 124.4px;
-        padding-right: 109.05px;
         padding-top: 17.61px;
     }
-    .person-image{
-        max-width: 121px;
-        margin-left: 10.6px;
-    }
     .person-name{
-        margin-left: 10.6px;
         font-size: 14px;
         line-height: 17px;
     }
     .person-country{
-        margin-left: 20px;
         font-size: 10px;
         line-height: 12px;
     }
-    .account{
-        padding-left:64px;
-        padding-right: 50px;
-    }
     .account-item{
         width: 78px;
-        height: 52px;
     }
     .account-number{
-        margin-top: 10px;
-        margin-bottom: 3.1px;
         font-size: 12px;
         line-height: 15px;
     }
@@ -181,43 +159,19 @@ body{
         font-size: 12px;
         line-height: 15px;
     }
-    .gallery{
-        padding-left: 5.05px;
-        padding-right: 12px;
-        padding-bottom: 31.18px;
-    }
     .row1{
-        margin-top: 54px;
+        margin-top: 25px;
     }
     #vase{
-        width: 101.28px;
-    }
-    #sofa{
-        width: 229.98px;
+        margin-right: 25px;
     }
     .row2{
-        margin-top: 19.74px;
+        margin-top: 25px;
     }
     .row2-col1{
-        width:229.25px;
-    }
-    #bath{
-        width: 229.25px;
+        margin-right: 25px;
     }
     .row2-col1-row2{
-        margin-top: 19.74px;
-    }
-    #room{
-        width: 101.28px;
-    }
-    #plant{
-        width: 101.28px;
-    }
-    #lamp{
-        width: 110.32px;
-    }
-    .footer{
-        padding-left: 42px;
-        padding-right: 46px;
+        margin-top: 25px;
     }
 }
