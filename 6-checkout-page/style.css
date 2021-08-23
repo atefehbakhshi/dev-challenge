@@ -1,0 +1,274 @@
+body{
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+}
+.title{
+    background-color: aqua;
+    width:100%;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    color: #4E5150;
+}
+.row{
+    /* background-color: blue; */
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.col-33{
+    width: 33%;
+    margin-right: 7%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.contact-information{
+    margin-top: 51px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.contact-information h4{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #333333;
+}
+label{
+    margin-top: 15px;
+    margin-bottom: 7px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    color: #4F4F4F;
+}
+.input-container{
+    display:flex;
+    flex-direction: row;
+    width:100%;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 1px solid #828282;
+    border-radius: 12px;
+}
+input{
+    width:100%;
+    border: none;
+    outline: none;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #828282;
+}
+.icon{
+    float: left;
+    padding-left: 14px;
+    padding-right: 18px;
+    color: #828282;
+    font-size:48px; 
+}
+.material-icons.md-36{
+    font-size:36px;
+}
+.shipping-address{
+    margin-top: 58px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.shipping-address h4{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #333333;
+}
+#name{
+    color: #333333;
+}
+#name::placeholder{
+    color: #333333;
+}
+.row-with-2cols{
+    width: 100%;
+    /* margin-top: 17px; */
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+}
+.col1{
+    margin-right: 5%;
+}
+#label{
+    margin-top: 105px;
+    margin-bottom: 17px;
+    color: red;
+}
+select{
+    width:100%;
+    border: none;
+    outline: none;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #828282;
+}
+.checkbox{
+    display: block;
+    position: relative;
+    margin-top: 25px;
+    padding-left:25px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.checkbox p{
+    margin-top: 5px;
+    margin-left: 11px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    color: #4F4F4F;
+}
+/* Hide the browser's default checkbox */
+.checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 21px;
+    width: 21px;
+    border: 1px solid #828282;
+    border-radius:4px;
+}
+/* When the checkbox is checked, add a blue background */
+.checkbox input:checked ~ .checkmark {
+    background-color: rgb(50, 130, 255);
+}
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+/* Show the checkmark when checked */
+.checkbox input:checked ~ .checkmark:after {
+    display: block;
+}
+/* Style the checkmark/indicator */
+.checkbox .checkmark:after {
+    left: 7px;
+    top: 2px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2.5px 2.5px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+button{
+    width: 40%;
+    margin-left: 60%;
+    margin-top: 23px;
+    background: #F2994A;
+    border-radius: 12px;
+    border: none;
+    
+}
+button p{
+    margin: 0px;
+    padding: 17px 45px 17px 45px;
+    box-sizing: border-box;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+.col-27{
+    width: 27%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* background: #F2F2F2;
+    border-radius: 12px; */
+}
+.box{
+    width: 100%;
+    margin-top: 75px;
+    display: flex;
+    flex-direction: column;
+    background: #F2F2F2;
+    border-radius: 12px;
+}
+.production{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+img{
+    border-radius: 12px;
+    max-width: 80%;
+}
+.price-box h6{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #4E5150;
+}
+.price{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.discount{
+    margin-right: 10px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #F2994A;
+}
+.count{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    text-decoration-line: line-through;
+    color: #4E5150;
+}
+.row1{
+    margin-top: 35px;
+    margin-bottom: 32px;
+}

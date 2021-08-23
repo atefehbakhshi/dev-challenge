@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Checkout page</title>
+</head>
+
+<body>
+    <div class="title">
+        <p>Checkout</p>
+    </div>
+    <div class="row">
+        <div class="col-33">
+            <div class="contact-information">
+                <h4>Contact information</h4>
+                <label for="email">E-mail</label>
+                <div class="input-container">
+                    <span class="material-icons md-36 icon">email</span>
+                    <input type="email" name="email" placeholder="Enter your email...">
+                </div>
+                <label for="phone">Phone</label>
+                <div class="input-container">
+                    <span class="material-icons md-36 icon">phone</span>
+                    <input type="number" name="phone" placeholder="Enter your phone...">
+                </div>
+            </div>
+            <div class="shipping-address">
+                <h4>shipping address</h4>
+                <label for="fname">Full name</label>
+                <div class="input-container">
+                    <span class="material-icons md-36 icon">account_circle</span>
+                    <input type="text" name="fname" placeholder="Rodney Cotton" id="name">
+                </div>
+                <label for="address">Address</label>
+                <div class="input-container">
+                    <span class="material-icons md-36 icon">home</span>
+                    <input type="text" name="address" placeholder="Your address..">
+                </div>
+                <label for="city">City</label>
+                <div class="input-container">
+                    <span class="material-icons md-36 icon">location_city</span>
+                    <input type="text" name="city" placeholder="Your city..">
+                </div>
+            </div>
+            <div class="row-with-2cols">
+                <div class="col1">
+                    <label for="country" id="label">Country</label>
+                    <div class="input-container">
+                        <span class="material-icons md-36 icon">public</span>
+                        <!-- <input type="text" name="country" placeholder="Your country.."> -->
+                        <select name="country">
+                            <option value="0">Your country..</option>
+                            <option value="1">Canada</option>
+                            <option value="2">USA</option>
+                            <option value="3">Iran</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col2">
+                    <label for="PostalCode" id="label">Postal code</label>
+                    <div class="input-container">
+                        <span class="material-icons md-36 icon">markunread_mailbox</span>
+                        <input type="text" name="PostalCode" placeholder="Your postal code..">
+                    </div>
+                </div>
+            </div>
+            <label class="checkbox">
+                <p>Save this information for next time</p>
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+            <button>
+                <p>Continue</p>
+            </button>
+
+
+
+        </div>
+        <div class="col-27">
+            <div class="box">
+                <div class="row1">
+                    <div class="production">
+                        <div class="photo">
+                            <img src="assets/images/photo1.png" alt="Vintage Backbag">
+                        </div>
+                        <div class="price-box">
+                            <h6>Vintage Backbag</h6>
+                            <div class="price">
+                                <p class="discount">$54.99</p>
+                                <p class="count">$94.99</p>
+                            </div>
+                            <div class="input-container">
+        
+                            </div>
+        
+                        </div>
+        
+                    </div>
+                </div>
+                <div class="row1">
+                    <div class="production">
+                        <div class="photo">
+                            <img src="assets/images/photo2.png" alt="Levi Shoes">
+                        </div>
+                        <div class="price-box">
+                            <h6>Levi Shoes</h6>
+                            <div class="price">
+                                <p class="discount">$74.99</p>
+                                <p class="count">$124.99</p>
+                            </div>
+                            <div class="input-container">
+        
+                            </div>
+        
+                        </div>
+        
+                    </div>
+                </div>
+                
+            </div>
+           
+        </div>
+    </div>
+
+
+
+
+
+
+</body>
+
+</html>
