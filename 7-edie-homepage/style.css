@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 header{
     width: 100%;
@@ -431,14 +432,9 @@ footer{
     color: #100E1D;
     background-color: #F2F2F2;
 }
-
-
-
 #footer-brand{
     color: #F2F2F2;
 }
-
-
 .footer-join-p{
     margin-bottom: 9px;
     font-family: Poppins;
@@ -448,7 +444,9 @@ footer{
     line-height: 21px;
     color: #828282;
 }
-
+.created{
+    padding-bottom: 24px;
+}
 .created p ,a{
     font-family: Montserrat;
     font-style: normal;
@@ -460,4 +458,259 @@ footer{
 }
 .created a{
     font-weight: bold;
+}
+.open{
+    color: #333333;
+    font-size: 30px;
+    float: left;
+    cursor: pointer;
+}
+#open{
+    display: none;
+}
+.nav{
+    width: 0;
+    overflow-x: hidden;
+    height: 100vh;
+    z-index: 1;
+    position: fixed;
+    background-color: rgba(66, 153, 230, 0.9);
+    transition: 1s;
+    display: block;
+}
+.nav a{
+    clear: left;
+    color: white;
+    font-size: 22px;
+    display: block;
+    text-decoration: none;
+    padding: 20px 0;
+}
+.close{
+    color: #333333;
+    font-family: Heebo;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 53px;
+    float: right;
+    margin: 45px 60px 0 0;
+    display: block;
+    cursor: pointer;
+}
+@media only screen and (max-width:800px) {
+    #open{
+        display: block;
+    }
+    .mobile-links{
+        margin-top: 100px;
+    }
+    #desktop-links{
+        display: none;
+    }
+    header{
+        width: 100%;
+        padding: 42px 56px 52px 52px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+    .brand{
+        font-family: Heebo;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 36px;
+        line-height: 53px;
+        color: #333333;
+    }
+    .links a{
+        margin-right: 15px;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 36px;
+        color: #333333;
+        text-decoration: none;
+    }
+    main{
+        width: 100%;
+    }
+    /*                     Home                     */
+    .home{
+        margin-top: 24px;
+        margin-bottom: 50PX;
+    }
+    .home p{
+        font-size: 24px;
+        line-height: 36px;
+    }
+    .top-text{
+        width: 80%;
+        margin-left: 40px;
+    }
+    #question{
+        padding-bottom: 8px;
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .hero-image{
+        margin-top: 15px;
+        margin-bottom: 22px;
+        padding-left: 10px;
+        padding-right: 17px;
+    }
+    .bot-text{
+        width: 80%;
+        margin-left: 40px;
+    }
+    #text{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .join{
+        width: 80%;
+        margin-left: 50px;
+    }
+    .join p{
+        margin-bottom: 5px;
+        font-size: 10px;
+        line-height: 15px;
+    }
+    input{
+        font-size: 14px;
+        line-height: 21px;
+    }
+    .join-button{
+        font-size: 14px;
+        line-height: 21px;
+    }
+    /*                     services                     */
+    .services{
+        margin-top: 50PX;
+        margin-left: 50px;
+        margin-bottom: 75px;
+        margin-right: 65px;
+    }
+    .services h4{
+        font-size: 24px;
+        line-height: 36px;
+    }
+    .servis-container{
+        flex-direction: column;
+    }
+    .box{
+        width: 100%;
+        margin-bottom: 86px;
+    }
+    /*                     Our Works                     */
+    .our-works{
+        margin-top: 75PX;
+        margin-left: 10px;
+        margin-bottom: 50px;
+        margin-right: 10px;
+    }
+    .our-works h4{
+        margin-left: 35px;
+        font-size: 24px;
+        line-height: 36px;
+    }
+    .gallery-row{
+        flex-direction: column;
+    }
+    .col75{
+        width: 100%;
+        margin-top: 25px;
+    }
+    #smart-home{
+        margin-top:50px;
+    }
+    .gray-text{
+        margin-top: 5px;
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .black-text{
+        font-size: 18px;
+        line-height: 27px;
+    }
+    #onboard{
+        margin-top: 50px;
+    }
+    #booking{
+        margin-top: 50px;
+    }
+    #juice-product{
+        margin-top: 50px;
+    }
+    .see-more{
+        justify-content: flex-start;
+        margin-top: 35px;
+    }
+    .see-more p{
+        font-size: 18px;
+        line-height: 27px;
+    }
+    .see-more span{
+        margin-top: 3px;
+    }
+    /*                     Clients                     */
+    .clients{
+        margin-top: 50PX;
+        margin-left: 10px;
+        margin-bottom: 50px;
+        margin-right: 10px;
+    }
+    .clients-container{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .clients-container-col30{
+        width: 80%;
+    }
+    .clients-container-col60{
+        width: 100%;
+    }
+    .client-viewpoint{
+        width: 100%;
+        margin-top: 50px;
+    }
+    .client-name{
+        width: 100%;
+    }
+    /*                     footer                     */
+    footer{
+        margin-top: 50px;
+    }
+    .footer-container{
+        margin-left: 41px;
+        margin-right: 41px;
+        margin-bottom: 75px;
+        padding: 35px;
+    }
+    .contact{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-nav{
+        margin-bottom: 65px;
+    }
+    .social-media{
+     justify-content: flex-start;
+     margin-bottom: 65px;
+    }
+    .fa-linkedin-square{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .footer-join-p{
+        margin-bottom: 5px;
+        font-size: 10px;
+        line-height: 15px;
+    }
 }
