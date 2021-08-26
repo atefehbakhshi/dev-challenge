@@ -4,8 +4,19 @@
     box-sizing: border-box;
 }
 .title{
-    background-color: aqua;
-    width:100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+.col-70{
+    width: 70%;
+    padding-top: 65px;
+    display: flex;
+    justify-content: flex-start;
+}
+.title h4{
     font-family: Montserrat;
     font-style: normal;
     font-weight: 600;
@@ -14,15 +25,15 @@
     color: #4E5150;
 }
 .row{
-    /* background-color: blue; */
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
-.col-33{
-    width: 33%;
-    margin-right: 7%;
+.col-45{
+    width: 45%;
+    padding-right: 110px;
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -103,16 +114,13 @@ input{
 }
 .row-with-2cols{
     width: 100%;
-    /* margin-top: 17px; */
+    /* margin-top: 15px; */
     display: flex;
     flex-direction: row;
-    justify-content:center;
-}
-.col1{
-    margin-right: 5%;
+    justify-content:space-between;
 }
 #label{
-    margin-top: 105px;
+    /* padding-top: 105px; */
     margin-bottom: 17px;
     color: red;
 }
@@ -139,7 +147,7 @@ select{
     user-select: none;
 }
 .checkbox p{
-    margin-top: 5px;
+    padding-top: 5px;
     margin-left: 11px;
     font-family: Montserrat;
     font-style: normal;
@@ -212,23 +220,26 @@ button p{
     line-height: 20px;
     color: #FFFFFF;
 }
-.col-27{
-    width: 27%;
+.col-25{
+    width: 25%;
     display: flex;
     flex-direction: column;
 }
 .box{
     width: 100%;
     margin-top: 75px;
-    padding: 35px 35px 15px 10px;
+    padding: 0px 35px 15px 10px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     background: #F2F2F2;
     border-radius: 12px;
 }
+.production-box{
+    margin-bottom: 95px;
+}
 .production{
-    /* background-color: blue; */
+    margin-top: 33px;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -260,6 +271,7 @@ img{
 .price{
     display: flex;
     flex-direction: row;
+    margin-top: 10px;
 }
 .discount{
     margin-right: 10px;
@@ -288,5 +300,195 @@ img{
     border: 1px solid #828282;
     border-radius: 12px;
 }
+.minus{
+    padding-left:7px;
+    padding-right: 7px;
+    background: #E0E0E0;
+    border-radius: 4px;
+    font-size: 20px;
+    color: #828282;
+    cursor: pointer;
+}
+.plus{
+    padding-left:7px;
+    padding-right: 7px;
+    background: #E0E0E0;
+    border-radius: 4px;
+    font-size: 20px;
+    color: #828282;
+    cursor: pointer;
+}
+.num{
+    text-align: center;
+    align-items: center;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #333333;
+}
+.shipping{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px 0px;
+    border-top:  1px solid #BDBDBD;
+}
+.total{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px 0px;
+    border-top:  1px solid #BDBDBD;
+}
+.total-price h6{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #333333;
+}
+.total-price p{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #333333;
+}
+.created{
+    padding-top: 95px;
+    padding-bottom: 24px;
+}
+.created p ,a{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #BDBDBD;
+}
+.created a{
+    font-weight: bold;
+}
+
+@media only screen and (max-width:800px){
+  .title{
+        padding-left: 18px;
+    }
+    .col-70{
+        width: 100%;
+        padding-top: 30px;
+    }
+    .title h4{
+        font-size: 24px;
+        line-height: 29px;
+    }
+    .row{
+        width: 100%;
+        padding-left: 18px;
+        padding-right: 18px;
+        flex-direction: column-reverse;
+    }
+    .col-45{
+        width: 100%;
+        padding-right: 0px;
+    }
+    .contact-information h4{
+        font-size: 14px;
+        line-height: 17px;
+    }
+    label{
+        font-size: 10px;
+        line-height: 12px;
+    }
+    input{
+        font-size: 12px;
+        line-height: 15px;
+    }
+    .icon{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .material-icons.md-36{
+        font-size:24px;
+    }
+    .shipping-address h4{
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+
+
+
+
+
+    
+    .row-with-2cols{
+        width: 100%;
+        /* margin-top: 15px; */
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+    }
+    #label{
+        /* padding-top: 105px; */
+        margin-bottom: 17px;
+        color: red;
+    }
+    select{
+        width:100%;
+        border: none;
+        outline: none;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        color: #828282;
+    }
+
+
+
+
+
+
+
+   
+    .checkbox p{
+        margin-left: 5px;
+        font-size: 10px;
+        line-height: 12px;
+    }
+    .col-25{
+        width: 100%;
+    }
+    .box{
+        margin-top: 25px;
+    }
+    .price-box{
+        padding: 10px 58px 10px 15px;
+    }
+    .price-box h6{
+        font-size: 12px;
+        line-height: 15px;
+    }
+    .discount{
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .count{
+        font-size: 10px;
+        line-height: 15px;
+    }
+    .total-price h6{
+        font-size: 14px;
+        line-height: 17px;
+    }
+}
+
 
 
