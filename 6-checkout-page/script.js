@@ -7,7 +7,8 @@ let shoesDiscount = 74.99;
 let shipping = 19;
 
 function minusFunction(event) {
-    if (event.id == "backbag-minus") {
+    console.log(event.target.id);
+    if (event.target.id == "backbag-minus") {
         if (backbagCounter > 0) {
             backbagCounter--
             document.getElementById("backbag-num").innerHTML = backbagCounter
@@ -18,7 +19,7 @@ function minusFunction(event) {
             backbagCounter = 0
         }
     }
-    if (event.id == "shoes-minus") {
+    if (event.target.id == "shoes-minus") {
         if (shoesCounter > 0) {
             shoesCounter--
             document.getElementById("shoes-num").innerHTML = shoesCounter
@@ -33,13 +34,13 @@ function minusFunction(event) {
 }
 
 function plusFunction(event) {
-    if (event.id == "backbag-plus") {
+    if (event.target.id == "backbag-plus") {
         backbagCounter++
         document.getElementById("backbag-num").innerHTML = backbagCounter
         document.getElementById("backbag-count").innerHTML = "$" + (backbagCounter * backbagCount).toFixed(2)
         document.getElementById("backbag-discount").innerHTML = "$" + (backbagCounter * backbagDiscount).toFixed(2)
     }
-    if (event.id == "shoes-plus") {
+    if (event.target.id == "shoes-plus") {
         shoesCounter++
         document.getElementById("shoes-num").innerHTML = shoesCounter
         document.getElementById("shoes-count").innerHTML = "$" + (shoesCounter * shoesCount).toFixed(2)
@@ -48,8 +49,14 @@ function plusFunction(event) {
     document.getElementById("total").innerHTML = ((shipping) + (backbagCounter * backbagDiscount) + (shoesCounter * shoesDiscount)).toFixed(2)
 }
 
+document.getElementById("backbag-minus").addEventListener("click", minusFunction)
+document.getElementById("shoes-minus").addEventListener("click", minusFunction)
+document.getElementById("backbag-plus").addEventListener("click", plusFunction)
+document.getElementById("shoes-plus").addEventListener("click", plusFunction)
 
-function validateForm() {
+function validateForm(e) {
+    e.preventDefault()
+    console.log(e.target);
     let email = document.forms["myForm"]["email"].value;
     let phone = document.forms["myForm"]["phone"].value;
     let fname = document.forms["myForm"]["fname"].value;
@@ -61,6 +68,7 @@ function validateForm() {
         alert("email must be filled out");
         return false;
     }
+
     else if (phone == "") {
         alert("phone must be filled out");
         return false;
@@ -86,4 +94,5 @@ function validateForm() {
     }
 }
 
+document.getElementById("mainForm").addEventListener("submit", validateForm)
 

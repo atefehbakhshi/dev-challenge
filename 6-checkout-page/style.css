@@ -53,6 +53,7 @@
     color: #333333;
 }
 label{
+    display: block;
     margin-top: 15px;
     margin-bottom: 7px;
     font-family: Montserrat;
@@ -120,9 +121,8 @@ input{
     justify-content:space-between;
 }
 #label{
-    /* padding-top: 105px; */
-    margin-bottom: 17px;
-    color: red;
+    /* display: block; */
+   
 }
 select{
     width:100%;
